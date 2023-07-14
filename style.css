@@ -29,15 +29,6 @@
     font-family: 'Rubik', sans-serif;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--Very-dark-blue);
-    min-height: 100vh;
-    margin: 0 auto;
-}
-
 span{
     color: white;
 }
@@ -64,9 +55,13 @@ svg {
     margin-top: .7rem;
 }
 
+.flex {
+    background-color: var(--Very-dark-blue);
+}
+
 .container {
     display: grid;
-    grid-template-rows: 1.5fr repeat(8, 1fr);
+    grid-template-rows: 250px repeat(8, 170px);
     gap: 2em;
     padding: 4rem 2rem;
 }
@@ -188,6 +183,7 @@ svg {
 @media (min-width: 765px) {
     .container {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 250px repeat(4, 180px);
 }
 
 .item1 {
@@ -200,6 +196,15 @@ svg {
     .container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 170px);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-dark-blue);
+    height: 100vh;
+    
 }
 
 .item1 {
